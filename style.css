@@ -1,0 +1,22 @@
+body {
+    text-align: justify;
+    font-family: sans-serif, 'Times New Roman';
+    margin: 80px 100px 100px 100px;
+}
+h1 {
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+p {
+    margin-left: 20px;
+    font-size: 15px;
+}

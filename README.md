@@ -1,2 +1,2 @@
 # meu-curriculo
-Acesse meu portfólio online:
+Este é o meu currículo em HTML. O markdown é muito limitado, então nesta página está o meu verdadeiro potencial.
