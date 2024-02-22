@@ -3,6 +3,7 @@ body {
     font-family: sans-serif, 'Times New Roman';
     margin: 80px 100px 100px 100px;
 }
+
 h1 {
     margin-bottom: 60px;
 }
@@ -19,4 +20,17 @@ h3{
 p {
     margin-left: 20px;
     font-size: 15px;
+}
+
+header {
+    line-height: 1.5;
+}
+
+img {
+    width: 25px;
+}
+
+#apresentacao {
+    text-align: center;
+    line-height:1.5;
 }
