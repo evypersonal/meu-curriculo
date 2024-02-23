@@ -1,7 +1,17 @@
-body {
+/* body {
     text-align: justify;
     font-family: sans-serif, 'Times New Roman';
     margin: 80px 100px 100px 100px;
+} */
+body{
+    width: 90vw;
+    margin: auto;
+    font-size: 20px;
+}
+
+section{
+    background-color: lightgrey;
+    padding: 40px; /*preenchimento [interno] */
 }
 
 h1 {
