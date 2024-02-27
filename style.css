@@ -1,39 +1,14 @@
-/* body {
-    text-align: justify;
-    font-family: sans-serif, 'Times New Roman';
-    margin: 80px 100px 100px 100px;
-} */
-body{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Sacramento&display=swap');
+
+body {
     width: 90vw;
     margin: auto;
     font-size: 20px;
 }
 
-section{
-    background-color: lightgrey;
+section {
     padding: 40px; /*preenchimento [interno] */
-}
-
-h1 {
-    margin-bottom: 60px;
-}
-
-h2 {
-    font-size: 26px;
-}
-
-h3{
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-p {
-    margin-left: 20px;
-    font-size: 15px;
-}
-
-header {
-    line-height: 1.5;
 }
 
 img {
@@ -43,4 +18,25 @@ img {
 #apresentacao {
     text-align: center;
     line-height:1.5;
+    background-color: lightcoral;
+}
+
+#formacaoAcademica {
+    background-color: lightgreen;
+}
+
+#experienciaProfissional {
+    background-color: bisque;
+}
+
+.title-secao {
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+}
+
+.name {
+    margin: 2rem 1rem 3rem 4rem;
+    color: red;
+    font-family: "Sacramento", cursive;
+    font-weight: 200;
 }
