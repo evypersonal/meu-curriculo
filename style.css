@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Sacramento&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 body {
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     font-size: 20px;
 }
@@ -13,6 +12,10 @@ section {
 
 img {
     width: 25px;
+}
+
+:root {
+    font-size: 16px;
 }
 
 #apresentacao {
@@ -32,11 +35,26 @@ img {
 .title-secao {
     text-transform: uppercase;
     font-family: "Orbitron", sans-serif;
+    font-size: 2rem;
+    margin: 1rem, 0rem, 1rem, 0;
+    padding: 1rem;
 }
 
 .name {
     margin: 2rem 1rem 3rem 4rem;
     color: red;
-    font-family: "Sacramento", cursive;
+    font-family: "Kode Mono", monospace;
     font-weight: 200;
+}
+
+#hardSkills {
+    background-color: lightseagreen;
+}
+
+#softSkills {
+    background-color: lightcyan;
+}
+
+p {
+    line-height: 1.5; /*altura da linha: 1.5x o tamanho padrão*/
 }
