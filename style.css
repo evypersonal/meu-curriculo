@@ -1,50 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
 body {
-    width: 80vw;
-    margin: auto;
-    font-size: 20px;
-}
+    width: 80vw; /*defininfo o tamanho da tela*/
+    margin: auto; /*aplicando a margem de acordo com o vw*/
+} 
 
 section {
-    padding: 40px; /*preenchimento [interno] */
+    padding: 60px; /*preenchimento [interno] das sessões */
 }
 
 img {
-    width: 25px;
+    width: 25px; /*ajustando o tamanho da img*/
 }
 
 :root {
-    font-size: 16px;
-}
+    font-size: 16px; /*tamanho da fonte raiz*/ 
+} 
+
+/*Sessões*/
 
 #apresentacao {
-    text-align: center;
-    line-height:1.5;
-    background-color: lightcoral;
+    text-align: center; /*alinhamento do texto*/
+    background: rgb(0,212,255);
+    background: linear-gradient(0deg, rgba(0,212,255,1) 17%, rgba(97,97,228,1) 62%, rgba(2,0,36,1) 96%);
 }
 
 #formacaoAcademica {
-    background-color: lightgreen;
+    background: rgb(0,212,255);
+    background: rgb(0,212,255);
+    background: linear-gradient(242deg, rgba(0,212,255,1) 11%, rgba(97,97,228,1) 70%, rgba(2,0,36,1) 100%);
 }
 
 #experienciaProfissional {
     background-color: bisque;
-}
-
-.title-secao {
-    text-transform: uppercase;
-    font-family: "Orbitron", sans-serif;
-    font-size: 2rem;
-    margin: 1rem, 0rem, 1rem, 0;
-    padding: 1rem;
-}
-
-.name {
-    margin: 2rem 1rem 3rem 4rem;
-    color: red;
-    font-family: "Kode Mono", monospace;
-    font-weight: 200;
 }
 
 #hardSkills {
@@ -55,6 +44,49 @@ img {
     background-color: lightcyan;
 }
 
+#idiomas{
+    background-color: beige;
+}
+
+/*Titulos*/
+.name {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 1rem;
+    color: red;
+    font-family:"Comfortaa", sans-serif;
+    font-weight: 200; /*peso da fonte*/
+}
+
+.title-secao {
+    text-transform: uppercase;
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+/* Edição dos parágrafos */
+
 p {
     line-height: 1.5; /*altura da linha: 1.5x o tamanho padrão*/
+    margin: 1rem 0;
+}
+
+/* Edição das listas */
+
+ul {
+    line-height: 2.0;
+}
+
+/* Edição da tabela */
+
+table,th,td {
+    border: 3px solid black;
+    line-height: 1.5;
+    text-align: center;
+    padding: 1rem;
+}
+
+th {
+    font-weight: 900;
 }
