@@ -14,8 +14,9 @@ img {
     width: 25px; /*ajustando o tamanho da img*/
 }
 
-:root {
+:root { /* root -> elemento raiz (html), mais alta hierarquia*/
     font-size: 16px; /*tamanho da fonte raiz*/ 
+    scroll-behavior: smooth; /*comportamento de rolamento da página: suave*/
 } 
 
 /*Sessões*/
@@ -27,25 +28,52 @@ img {
 }
 
 #formacaoAcademica {
+    text-align: right;
     background: rgb(0,212,255);
     background: rgb(0,212,255);
     background: linear-gradient(242deg, rgba(0,212,255,1) 11%, rgba(97,97,228,1) 70%, rgba(2,0,36,1) 100%);
 }
 
 #experienciaProfissional {
-    background-color: bisque;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 15%, rgba(9,9,121,1) 84%, rgba(2,0,36,1) 100%);
 }
 
 #hardSkills {
-    background-color: lightseagreen;
+    text-align: right;
+    background: rgb(0,212,255);
+    background: rgb(0,212,255);
+    background: linear-gradient(242deg, rgba(0,212,255,1) 11%, rgba(97,97,228,1) 70%, rgba(2,0,36,1) 100%);
 }
 
 #softSkills {
-    background-color: lightcyan;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 15%, rgba(9,9,121,1) 84%, rgba(2,0,36,1) 100%);
 }
 
 #idiomas{
-    background-color: beige;
+    text-align: center;
+    background: rgb(0,212,255);
+    background: linear-gradient(180deg, rgba(0,212,255,1) 15%, rgba(9,9,121,1) 84%, rgba(2,0,36,1) 100%);
+}
+
+#tecnologias{
+    display:flex; /*sempre aplicado ao elemento pai*/
+    justify-content: space-evenly; /*alinha o conteúdo no eixo principal*/
+}
+
+article h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+article p {
+    text-align: justify;
 }
 
 /*Titulos*/
@@ -70,6 +98,7 @@ img {
 p {
     line-height: 1.5; /*altura da linha: 1.5x o tamanho padrão*/
     margin: 1rem 0;
+    color: black;
 }
 
 /* Edição das listas */
@@ -85,8 +114,10 @@ table,th,td {
     line-height: 1.5;
     text-align: center;
     padding: 1rem;
+    font-weight: 900;
+
 }
 
-th {
-    font-weight: 900;
+article {
+    width: 30%; /* 30% do pai (section id="tecnologias")*/
 }
