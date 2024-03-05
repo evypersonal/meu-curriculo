@@ -23,8 +23,8 @@ img {
 
 #apresentacao {
     text-align: center; /*alinhamento do texto*/
-    background: rgb(0,212,255);
-    background: linear-gradient(0deg, rgba(0,212,255,1) 17%, rgba(97,97,228,1) 62%, rgba(2,0,36,1) 96%);
+    background: rgb(155, 227, 241);
+    background: linear-gradient(0deg, rgb(160, 230, 244) 17%, rgb(141, 141, 237) 62%, rgb(91, 90, 108) 96%);
 }
 
 #formacaoAcademica {
@@ -57,9 +57,15 @@ img {
     background: linear-gradient(180deg, rgba(0,212,255,1) 15%, rgba(9,9,121,1) 84%, rgba(2,0,36,1) 100%);
 }
 
+/* @TODO 
+    1. Estilizar as demais sessões;
+    2. Estilizar elementos article;
+    3. Tirar as sombras de texto;
+*/
+
 #tecnologias{
     display:flex; /*sempre aplicado ao elemento pai*/
-    justify-content: space-evenly; /*alinha o conteúdo no eixo principal*/
+    justify-content: space-between; /*alinha o conteúdo no eixo principal*/
 }
 
 article h1 {
@@ -81,7 +87,7 @@ article p {
     text-align: center;
     font-size: 2rem;
     margin: 2rem 1rem;
-    color: red;
+    color: #ff0000;
     font-family:"Comfortaa", sans-serif;
     font-weight: 200; /*peso da fonte*/
 }
@@ -90,8 +96,8 @@ article p {
     text-transform: uppercase;
     font-family: "Orbitron", sans-serif;
     font-size: 3rem;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1rem 0 2rem 0;
+    padding: 0;
 }
 /* Edição dos parágrafos */
 
@@ -120,4 +126,50 @@ table,th,td {
 
 article {
     width: 30%; /* 30% do pai (section id="tecnologias")*/
+    padding: 2rem;
+    background-color: #cecece;
+
+}
+
+article h1 {
+    color: blue;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+article h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+}
+
+article .autor{
+    font-style: oblique;
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 80%;
+    margin-right: 5rem;
+}
+
+article .data{
+    font-style: oblique;
+    font-size: 80%;
+}
+
+article .continue-lendo{
+    background-color: rgb(72, 61, 139);
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+article .continue-lendo a{
+    color: white;
+    text-decoration: none;
+}
+
+article p{
+    text-align: justify;
+    margin-bottom: 1rem;
 }
