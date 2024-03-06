@@ -71,11 +71,13 @@ img {
 article h1 {
     font-size: 2rem;
     font-weight: bold;
+    margin: 0 0 1rem 0;
 }
 
 article h2 {
     font-size: 1.5rem;
     font-weight: 600;
+    margin: 0 0 1rem 0;
 }
 
 article p {
@@ -121,7 +123,6 @@ table,th,td {
     text-align: center;
     padding: 1rem;
     font-weight: 900;
-
 }
 
 article {
@@ -172,4 +173,9 @@ article .continue-lendo a{
 article p{
     text-align: justify;
     margin-bottom: 1rem;
+}
+
+#tabela {
+    display: flex;
+    justify-content: center;
 }
