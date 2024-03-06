@@ -6,10 +6,6 @@ body {
     margin: auto; /*aplicando a margem de acordo com o vw*/
 } 
 
-section {
-    padding: 60px; /*preenchimento [interno] das sessões */
-}
-
 img {
     width: 25px; /*ajustando o tamanho da img*/
 }
@@ -17,6 +13,7 @@ img {
 :root { /* root -> elemento raiz (html), mais alta hierarquia*/
     font-size: 16px; /*tamanho da fonte raiz*/ 
     scroll-behavior: smooth; /*comportamento de rolamento da página: suave*/
+    --cor-primaria-texto: red;
 } 
 
 /*Sessões*/
@@ -109,12 +106,6 @@ p {
     color: black;
 }
 
-/* Edição das listas */
-
-ul {
-    line-height: 2.0;
-}
-
 /* Edição da tabela */
 
 table,th,td {
@@ -126,10 +117,9 @@ table,th,td {
 }
 
 article {
-    width: 30%; /* 30% do pai (section id="tecnologias")*/
+    width: 25%; /* 30% do pai (section id="tecnologias")*/
     padding: 2rem;
     background-color: #cecece;
-
 }
 
 article h1 {
@@ -143,6 +133,7 @@ article h2{
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0 0 1rem 0;
+    color: var(--cor-primaria-texto)
 }
 
 article .autor{
@@ -163,6 +154,8 @@ article .continue-lendo{
     padding: .5rem 1rem;
     margin-top: 1rem;
     border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 article .continue-lendo a{
@@ -173,9 +166,30 @@ article .continue-lendo a{
 article p{
     text-align: justify;
     margin-bottom: 1rem;
+    height: 150px;
+    overflow: hidden;
 }
 
 #tabela {
     display: flex;
     justify-content: center;
 }
+
+#navegacao {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lista-tags li {
+    display: inline-block;
+    background-color: hsl(0, 0%, 81%, .5);
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+/* unificando o padding das sessões*/
+#apresentacao, #formacaoAcademica, #experienciaProfissional, #hardSkills, #softSkills, #idiomas {
+    padding: 40px; /*preenchimento [interno] das sessões */
+}
+

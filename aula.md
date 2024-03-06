@@ -64,3 +64,18 @@ vermelho    verde       azul
 rgb(0...255, 0...255, 0...255) -> valores vão de 0...à 255. (decimal tem que usar vírgula e espaços.Ex : rgb(170, 51, 255))
 No hexadecimal #00...FF 00...FF 00...FF (no Hexadecimal não utiliza virgula e nem espaço. Ex : #AA33FF)
 
+# Unificação de padding nas sessões
+
+Unificamos o padding em uma só estilização;
+
+# Overflow
+
+definir o tamanho de height no paragrafo do article;
+hidden (para esconder o texto do article);
+
+# Criar variavel no CSS
+
+no root-> --cor-primaria-texto: red;
+
+no corpo-> color: var(--cor-primaria-texto).
+
