@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
-body {
-    width: 80vw; /*defininfo o tamanho da tela*/
-    margin: auto; /*aplicando a margem de acordo com o vw*/
-} 
-
 img {
     width: 25px; /*ajustando o tamanho da img*/
 }
@@ -13,45 +8,78 @@ img {
 :root { /* root -> elemento raiz (html), mais alta hierarquia*/
     font-size: 16px; /*tamanho da fonte raiz*/ 
     scroll-behavior: smooth; /*comportamento de rolamento da página: suave*/
-    --cor-primaria-texto: red;
+    --padding-sessoes: 40px;
+    /* TEMAS */
+    --plano-fundo: #ffffff;
+
+    /* Fundo das sessões*/
+    --fundo-sessoes: #00d4ff; 
+    --fundo-apresentacao: #9be3f1; /*apresentacao*/
+
+    /* Gradiente das sessões */
+    --gradiente-sessoes: linear-gradient(242deg, #00d4ff 11%, #6161e4 70%, #020024 100%); /*formacaoAcademica e hardSkills*/
+    --gradiente-sessoes-esquerda: linear-gradient(90deg, #00d4ff 15%, #090979 84%, rgba(2,0#020024)); /*experienciaProfissional e softskills*/
+    --gradiente-apresentacao: linear-gradient(0deg, #a0e6f4 17%, #8d8ded 62%, #5b5a6c 96%); /*apresentacao*/
+}
+
+[data-tema="dark"] {
+    --plano-fundo: #353535;
+
+
+}
+
+[data-tema="light"]{
+    --plano-fundo: #ffffff;
+    --cor-primaria-texto: #000000;
+    --cor-fundo-tags: #ffffff;
+}
+
+.name-titulo{
+    background: rgb(155, 227, 241);
+    background: linear-gradient(0deg, rgb(160, 230, 244) 17%, rgb(141, 141, 237) 62%, rgb(91, 90, 108) 96%);
+    padding: 40px;
+}
+
+body {
+    width: 80vw; /*defininfo o tamanho da tela*/
+    margin: auto; /*aplicando a margem de acordo com o vw*/
+    background-color: var(--plano-fundo);
 } 
 
 /*Sessões*/
 
 #apresentacao {
     text-align: center; /*alinhamento do texto*/
-    background: rgb(155, 227, 241);
-    background: linear-gradient(0deg, rgb(160, 230, 244) 17%, rgb(141, 141, 237) 62%, rgb(91, 90, 108) 96%);
+    background: var(--fundo-sessoes);
+    background: var(--gradiente-apresentacao);
 }
 
 #formacaoAcademica {
     text-align: right;
-    background: rgb(0,212,255);
-    background: rgb(0,212,255);
-    background: linear-gradient(242deg, rgba(0,212,255,1) 11%, rgba(97,97,228,1) 70%, rgba(2,0,36,1) 100%);
+    background: var(--fundo-sessoes);
+    background: var(--gradiente-sessoes);
 }
 
 #experienciaProfissional {
-    background: rgb(0,212,255);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 15%, rgba(9,9,121,1) 84%, rgba(2,0,36,1) 100%);
+    background: var(--fundo-sessoes);
+    background: var(--gradiente-sessoes-esquerda);
 }
 
 #hardSkills {
     text-align: right;
-    background: rgb(0,212,255);
-    background: rgb(0,212,255);
-    background: linear-gradient(242deg, rgba(0,212,255,1) 11%, rgba(97,97,228,1) 70%, rgba(2,0,36,1) 100%);
+    background: var(--fundo-sessoes);
+    background: var(--gradiente-sessoes);
 }
 
 #softSkills {
-    background: rgb(0,212,255);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 15%, rgba(9,9,121,1) 84%, rgba(2,0,36,1) 100%);
+    background: var(--fundo-sessoes);
+    background: var(--gradiente-sessoes2);
 }
 
 #idiomas{
     text-align: center;
-    background: rgb(0,212,255);
-    background: linear-gradient(180deg, rgba(0,212,255,1) 15%, rgba(9,9,121,1) 84%, rgba(2,0,36,1) 100%);
+    background: var(--fundo-sessoes);
+    background: linear-gradient(180deg, #00d4ff 15%, #090979 84%, #020024 100%);
 }
 
 /* @TODO 
@@ -86,7 +114,7 @@ article p {
     text-align: center;
     font-size: 2rem;
     margin: 2rem 1rem;
-    color: #ff0000;
+    color: #ffffff;
     font-family:"Comfortaa", sans-serif;
     font-weight: 200; /*peso da fonte*/
 }
@@ -190,6 +218,6 @@ article p{
 
 /* unificando o padding das sessões*/
 #apresentacao, #formacaoAcademica, #experienciaProfissional, #hardSkills, #softSkills, #idiomas {
-    padding: 40px; /*preenchimento [interno] das sessões */
+    padding: var(--padding-sessoes); /*preenchimento [interno] das sessões */
 }
 

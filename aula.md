@@ -79,3 +79,9 @@ no root-> --cor-primaria-texto: red;
 
 no corpo-> color: var(--cor-primaria-texto).
 
+# Class
+"."
+
+# Id
+"#"
+
