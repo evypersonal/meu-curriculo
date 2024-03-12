@@ -85,3 +85,20 @@ no corpo-> color: var(--cor-primaria-texto).
 # Id
 "#"
 
+# Lógica de Programação
+
+##Algoritmo
+
+### Descrição narrativa
+Descrever passo a passo a resolução;
+
+### Fluxograma
+Ilustação do passo a passo;
+
+### Pseudocódigo
+Portugol;
+
+@TODO
+Exercício de lógica: utilize a descrição narrativa e o fluxograma para descrever o algoritmo do processo de "Fritar um ovo".
+Para fluxograma: https://app.diagrams.net/
+Para descrição narrativa: Bloco de notas.
