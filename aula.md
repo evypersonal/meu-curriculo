@@ -85,9 +85,9 @@ no corpo-> color: var(--cor-primaria-texto).
 # Id
 "#"
 
-# Lógica de Programação
+# Lógica de Programação (Ebook I)
 
-##Algoritmo
+## Algoritmo
 
 ### Descrição narrativa
 Descrever passo a passo a resolução;
@@ -102,3 +102,82 @@ Portugol;
 Exercício de lógica: utilize a descrição narrativa e o fluxograma para descrever o algoritmo do processo de "Fritar um ovo".
 Para fluxograma: https://app.diagrams.net/
 Para descrição narrativa: Bloco de notas.
+
+## Linguagem de programação
+
+### Baixo Nível
+- Linguagens mais próximas do nivel da máquina;
+- Mais complexas;
+- Melhor performance
+
+### Alto Nível
+- Linguagens mais próximas do nível humano;
+
+
+### Formas de execução do algoritmo
+**Existem 2 formas:**
+- Compilada : Ex (C# / Java) Primeiro traduz o código, para depois executar.
+- Interpretada: Ex (JavaScript/Python) Executam diretamento o código.
+Amabas fazem a interpretação do código para o nível da máquina.
+
+### Tipos de linguagem
+**Existem 2 tipos:**
+- Estruturadas: Trabalha com apenas um arquivo, codificando o algo-ritmo linha após linha seguindo uma sequência lógica de evento;
+- Orientadas a objetos: Reusabilidade de código com o objetivo de simplificar a manutenção de um programa.
+
+## Variáveis(Const/Let)
+
+**Possuem Tipos de dados:**
+- String (Cadeia de caracteres / Texto)
+- Number (Números)
+- Boolean (Verdadeiro,Falso)
+- Objeto;
+
+**Identificador:**
+- camelCase
+- snake_case
+- PascalCase
+
+
+**Valor:**
+- True/False;
+- 'texto';
+- 32;
+- 21.09;
+- {id: 1, nome: 'Evy', instrutor: true};
+
+**Escopo:**
+- Variável com Escopo global: Válida em toda parte do programa;
+- Variável com Escopo local: Válida em determinado parte do código;
+
+## Operadores de Atribuição
+
+=       -> valor é atribuido à variável;
++=      -> atribui somando o novo valor;
+-=      -> atribui subtraindo o novo valor;
+*=      -> atribui multiplicando o novo valor;
+/=      -> atribui dividindo o novo valor;
+
+## Operadores Aritméticos
+
++       -> Soma
+-       -> Subtração
+*       -> Multiplicação
+/       -> Divisão
+%       -> Resto da divisão (módulo)
+
+## Operadores de Incremento e Decremento
+
+++      -> Incrementa 1;
+--      -> Decrementa 1;
+Pré incremento      -> incrementa antes da variavel;
+Pós incremento      -> incrementa após a variável;
+
+## Operadores de comparação
+
+===      -> Igualdade; 
+!=      -> Diferença;
+>       -> Maior;
+<       -> Menor;
+<=      -> Menor ou Igual;
+>=      -> Maior ou Igual;
